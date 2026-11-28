@@ -1,0 +1,130 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    font-family: system-ui, sans-serif;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 1296px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+:root {
+    --color-neutral-100: #fcfcfd;
+    --color-neutral-200: #f5f6f7;
+    --color-neutral-300: #eaecef;
+    --color-neutral-400: #d9dde2;
+    --color-neutral-500: #c1c7d0;
+    --color-neutral-600: #a3aebc;
+    --color-neutral-700: #8492a7;
+    --color-neutral-800: #657792;
+    --color-neutral-900: #4e5f76;
+    --color-neutral-1000: #38465a;
+    --color-neutral-1100: #242e3d;
+    --color-neutral-1200: #11171f;
+    --color-neutral-1300: #000000;
+
+    --color-blue-100: #c2d5ff;
+    --color-blue-200: #b2caff;
+    --color-blue-300: #a0beff;
+    --color-blue-400: #8bafff;
+    --color-blue-500: #729eff;
+    --color-blue-600: #578bff;
+    --color-blue-700: #3876ff;
+    --color-blue-800: #1760ff;
+    --color-blue-900: #004cf3;
+    --color-blue-1000: #0041cf;
+    --color-blue-1100: #0035a9;
+    --color-blue-1200: #002983;
+    --color-blue-1300: #001d5c;
+}
+
+/* ============================ STANDARDMALL CSS ============================ */
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    transition: color 200ms ease-out;
+}
+.logo:hover {
+    color: var(--color-blue-900);
+    transition: color 0ms ease-out;
+}
+
+header {
+    padding-block: 8px;
+    background-color: var(--color-neutral-300);
+}
+
+.flexheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-block: 4px;
+    transition: color 200ms ease-out;
+}
+nav a:first-child {
+    padding-left: 0px;
+}
+nav a:last-child {
+    padding-right: 0px;
+}
+
+nav a:hover {
+    color: var(--color-blue-900);
+    transition: color 0ms ease-out;
+}
+
+.omhemsidan {
+    margin-block: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
